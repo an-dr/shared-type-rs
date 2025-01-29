@@ -1,0 +1,19 @@
+[package]
+authors = [ "Andrei Gramakov <mail@agramakov.me>" ]
+categories = [ "rust-patterns", "concurrency" ]
+description = "Shared type alias and several traits to simplify working with Arc<Mutex<T>>."
+edition = "2021"
+keywords = [ "arc", "mutex", "trait", "shared" ]
+license = "MIT"
+name = "shared-type"
+readme = "README.md"
+repository = "https://github.com/an-dr/shared-type-rs"
+version = "1.0.0"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+
+[profile.dev]
+opt-level = 1
